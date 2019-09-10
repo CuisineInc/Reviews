@@ -37,3 +37,9 @@ npm install -g webpack
 npm install
 ```
 
+## RESTful CRUD API
+For creating: app.get ~ "/api/:restaurantName/reviews" (GET)
+For posting: app.post ~ "/api/:restaurantName/reviews" (POST)
+For updating: app.put ~ "/api/:restaurantName/reviews" (PUT)
+For deleting: app.delete ~ "/api/:restaurantName/reviews" (DELETE)
+

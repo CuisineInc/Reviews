@@ -1,13 +1,12 @@
-# Project Name
+# Cuisine Inc Reviews
 
-> Project description
+> Reviews section for the Cuisine Inc restaurant reservation application
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/CuisineInc/Reservations
+  - https://github.com/CuisineInc/Photo-Gallery
+  - https://github.com/CuisineInc/Menu
 
 ## Table of Contents
 

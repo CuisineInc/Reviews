@@ -43,6 +43,7 @@ npm install
 Input/parameters: {
 	reviews_id
 }
+
 Response: {
 	user_id,
 	restaurant_id,
@@ -78,6 +79,7 @@ Input/parameters: {
 	would_recommend,
 	date
 }
+
 Reponse: {
 	reviews_id
 }
@@ -97,19 +99,26 @@ Input/parameters: {
 	would_recommend,
 	date
 }
+
 Reponse: {
 	reviews_id
 }
+
 Review: Review description and text contents
+
 Overall, Food, Service, Ambience, Value: Rating 1-5
+
 Noise: Noise level
+
 ### DELETE /api/reviews/:restaurantName
 Input/parameters: {
 	reviews_id,
 }
+
 Reponse: {
 	success
 }
+
 Success: boolean of whether the delete was successful
 
 

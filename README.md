@@ -37,7 +37,8 @@ npm install
 ```
 
 ## RESTful CRUD API
-GET /api/:restaurantName/reviews/
+
+### GET /api/:restaurantName/reviews/
 
 Input/parameters: {
 	reviews_id
@@ -63,7 +64,7 @@ Overall, Food, Service, Ambience, Value: Rating 1-5
 Noise: Noise level
 
 
-POST /api/:restaurantName/reviews
+### POST /api/:restaurantName/reviews
 Input/parameters: {
 	user_id,
 	restaurant_id,
@@ -81,7 +82,7 @@ Reponse: {
 	reviews_id
 }
 
-For updating: app.put ~ "/api/reviews/:restaurantName" (PUT)
+### PUT /api/reviews/:restaurantName
 Input/parameters: {
 	reviews_id,
 	user_id,
@@ -102,8 +103,7 @@ Reponse: {
 Review: Review description and text contents
 Overall, Food, Service, Ambience, Value: Rating 1-5
 Noise: Noise level
-
-For deleting: app.delete ~ "/api/reviews/:restaurantName" (DELETE)
+### DELETE /api/reviews/:restaurantName
 Input/parameters: {
 	reviews_id,
 }

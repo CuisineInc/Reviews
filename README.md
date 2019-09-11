@@ -46,3 +46,69 @@ For updating: app.put ~ "/api/reviews/:restaurantName" (PUT)
 
 For deleting: app.delete ~ "/api/reviews/:restaurantName" (DELETE)
 
+Reviews
+
+Create/POST:
+Input/parameters: {
+	user_id,
+	restaurant_id,
+	review,
+	overall,
+	food,
+	service,
+	ambience,
+	value,
+	noise,
+	would_recommend,
+	date
+}
+Reponse: {
+	reviews_id
+}
+
+Read/GET:
+Input/parameters: {
+	reviews_id
+}
+Response: {
+	user_id,
+	restaurant_id,
+	review,
+	overall,
+	food,
+	service,
+	ambience,
+	value,
+	noise,
+	would_recommend,
+	date
+}
+
+Update/PUT:
+Input/parameters: {
+	reviews_id,
+	user_id,
+	restaurant_id,
+	review,
+	overall,
+	food,
+	service,
+	ambience,
+	value,
+	noise,
+	would_recommend,
+	date
+}
+Reponse: {
+	reviews_id
+}
+
+Delete/DELETE
+Update/PUT:
+Input/parameters: {
+	reviews_id,
+}
+Reponse: {
+	success
+}
+

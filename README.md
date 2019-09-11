@@ -57,8 +57,11 @@ Response: {
 }
 
 Review: Review description and text contents
+
 Overall, Food, Service, Ambience, Value: Rating 1-5
+
 Noise: Noise level
+
 
 POST /api/:restaurantName/reviews
 Input/parameters: {

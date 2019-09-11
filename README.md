@@ -37,35 +37,8 @@ npm install
 ```
 
 ## RESTful CRUD API
-For creating: app.get ~ "/api/reviews/:restaurantName" (GET)
+GET /api/:restaurantName/reviews/
 
-For posting: app.post ~ "/api/reviews" (POST)
-
-For updating: app.put ~ "/api/reviews/:restaurantName" (PUT)
-
-For deleting: app.delete ~ "/api/reviews/:restaurantName" (DELETE)
-
-Reviews
-
-Create/POST:
-Input/parameters: {
-	user_id,
-	restaurant_id,
-	review,
-	overall,
-	food,
-	service,
-	ambience,
-	value,
-	noise,
-	would_recommend,
-	date
-}
-Reponse: {
-	reviews_id
-}
-
-Read/GET:
 Input/parameters: {
 	reviews_id
 }
@@ -83,7 +56,29 @@ Response: {
 	date
 }
 
-Update/PUT:
+Review: Review description and text contents
+Overall, Food, Service, Ambience, Value: Rating 1-5
+Noise: Noise level
+
+POST /api/:restaurantName/reviews
+Input/parameters: {
+	user_id,
+	restaurant_id,
+	review,
+	overall,
+	food,
+	service,
+	ambience,
+	value,
+	noise,
+	would_recommend,
+	date
+}
+Reponse: {
+	reviews_id
+}
+
+For updating: app.put ~ "/api/reviews/:restaurantName" (PUT)
 Input/parameters: {
 	reviews_id,
 	user_id,
@@ -101,13 +96,17 @@ Input/parameters: {
 Reponse: {
 	reviews_id
 }
+Review: Review description and text contents
+Overall, Food, Service, Ambience, Value: Rating 1-5
+Noise: Noise level
 
-Delete/DELETE
-Update/PUT:
+For deleting: app.delete ~ "/api/reviews/:restaurantName" (DELETE)
 Input/parameters: {
 	reviews_id,
 }
 Reponse: {
 	success
 }
+Success: boolean of whether the delete was successful
+
 

@@ -1,7 +1,5 @@
 module.exports = {
-  host: 'database',
-  user: 'root',
-  password: '',
-  database: 'reviewsDB',
-  port: '',
+  host: 'localhost',
+  user: 'postgres',
+  database: 'reviews',
 };
